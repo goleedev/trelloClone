@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TrelloList from "./TrelloList";
+import { connect } from "react-redux";
 
 function App() {
   return (
@@ -9,5 +10,9 @@ function App() {
     </div>
   );
 }
+
+const mapStateToProps = state => ({
+    lists : state.lists
+})
 
 export default App;
