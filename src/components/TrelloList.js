@@ -4,6 +4,7 @@ import TrelloActionButton from "./TrelloActionButton";
 import { Droppable } from "react-beautiful-dnd";
 
 
+
 const TrelloList = ({ title, cards, listID }) => {
     return (
         <Droppable droppableId={String(listID)}>
@@ -23,7 +24,7 @@ const TrelloList = ({ title, cards, listID }) => {
                         />
                     ))}
                     <TrelloActionButton listID = {listID} />
-                    {provided.placeholder}
+
                 </div>
             )}
         </Droppable>
